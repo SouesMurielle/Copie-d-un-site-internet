@@ -1,42 +1,88 @@
 :root {
-    --fond: rgb(51, 187, 155);
-    --textcolor: white;
+    --fond: #2caf90;
+    --textcolor: #fff;
+    --else: #1b2733;
 }
 
-body,
-html {
+@font-face {
+    font-family: "ProximaNova";
+    src: url("https://cdn2.hubspot.net/hubfs/4364162/web/fonts/proximanova/ProximaNova-Light.otf") format("opentype");
+    font-weight: 300
+}
+
+@font-face {
+    font-family: "ProximaNova";
+    src: url("https://cdn2.hubspot.net/hubfs/4364162/web/fonts/proximanova/ProximaNova-Regular.otf") format("opentype");
+    font-weight: 400
+}
+
+@font-face {
+    font-family: "ProximaNova";
+    font-weight: 600;
+    src: url("https://cdn2.hubspot.net/hubfs/4364162/web/fonts/proximanova/ProximaNova-Semibold.otf") format("opentype")
+}
+
+@font-face {
+    font-family: "ProximaNova";
+    font-weight: 700;
+    src: url("https://cdn2.hubspot.net/hubfs/4364162/web/fonts/proximanova/ProximaNova-Bold.otf") format("opentype")
+}
+
+@font-face {
+    font-family: "ProximaNova";
+    src: url("https://cdn2.hubspot.net/hubfs/4364162/web/fonts/proximanova/ProximaNova-RegularIt.otf") format("opentype");
+    font-weight: 400;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "ProximaNova";
+    src: url("https://cdn2.hubspot.net/hubfs/4364162/web/fonts/proximanova/ProximaNova-LightIt.otf") format("opentype");
+    font-weight: 300;
+    font-style: italic
+}
+
+body {
+    font-size: 17px;
+    line-height: 1.6;
+    display: flex;
     margin: 0;
-/*    background-color: var(--fond);*/
+    padding: 0;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: ProximaNova, sans-serif;
+    color: #546476;
 }
 
 nav {
     background-color: var(--fond);
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-left: 250px;
-    padding-right: 220px;
-    margin:0px 0px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
+/*    justify-content: space-between;*/
+    align-items: center; 
+    margin: 0px 0px;
+    padding: 10px 10%;
 }
 
 nav img {
     display: flex;
+    flex: 1;
+    justify-content: flex-start;
 }
 
 
 nav ul {
     display: flex;
+    flex: 1.2;
+    justify-content: space-around;
     list-style: none;
     align-items: center;
-    font-size: 15px;
+    font-size: 1.6pxem;
+    margin-right: 13%;
+    padding: 0;
 }
 
 nav ul li {
-    margin-right: 40px;
     padding-top: 10px;
     padding-bottom: 10px;
     
@@ -45,19 +91,170 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: var(--textcolor);
-    font-family: "Helvetica 55 Roman";
-    font-weight: normal;
+    font-family: ProximaNova, sans-serif;
+    font-weight: 400;
 }
 
- a.gras{
-    font-family: "Helvetica 63 Medium extended";
-    font-weight: normal;
+.gras {
+    font-weight: 700;
 }
 
+nav ul li:last-child {
+    border: solid 1px white;
+    border-radius: 2.4rem;
+    padding: 0 1.5rem;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    transition: 0.25s ease-in;
+}
 
+nav ul li:last-child a {
+    transition: 0.25s ease-in;
+}
 
+nav ul li:last-child:hover,
+nav ul li:last-child:hover a {
+    background-color: var(--textcolor);
+    color: var(--else);
+    cursor: pointer;
+}
 
+.section1 {
+    background-color: var(--fond);
+    color: #fff;
+    display: flex;
+    padding: 0 21%;
+}
 
+.section1 h1 {
+    font-size: 44px;
+    margin: 0px;
+    margin-bottom: 10px;
+    line-height: 50px;
+}
+
+.section1 .right img{
+    max-width: 514px;
+    padding-right: 10px;
+}
+
+.section1 .left {
+    padding-right: 20px;
+}
+
+.section1 p.sous-texte {
+    margin: 0;
+    line-height: 30px;
+}
+
+.informations {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 36px;
+}
+
+.premier-pas {
+    border: solid 1px white;
+    border-radius: 2.4rem;
+    padding: 0 2.2rem;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    transition: 0.25s ease-in;
+    background-color: #fff;
+    color: #2caf90;
+    margin-right: 20px;
+}
+
+.contactez-nous {
+    border: solid 1px white;
+    border-radius: 2.4rem;
+    padding: 0 2.4rem;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    transition: 0.25s ease-in;
+}
+
+.sponsors {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.sponsors img {
+    padding-top: 20px;
+    width:95px;
+    border-width:0px;
+    border:0px;
+    opacity: 0.4;
+}
+
+.section2 {
+    margin-right: 231.5px;
+    margin-left: 231.5px;
+    padding-left: 165px;
+    padding-right: 165px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -140px;
+}
+
+.section2 > div {
+    background-color: #fff;
+    width: 38%;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 60px;
+    border-radius: 16px;
+}
+
+.section2 p {
+    margin: 0;
+}
+
+.la-base {
+    text-transform: uppercase;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 600;
+    display: inline-flex;
+    justify-content: center;
+    letter-spacing: 1px;
+    line-height: 1.85;
+    padding: 3px 12px 0px 12px;
+    width: auto;
+    height: 24px;
+    color: #8c97a1;
+    background-color: #e0e2e4;
+}
+
+.exclu-lunchr {
+    background-color: #2caf90;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 600;
+    display: inline-flex;
+    justify-content: center;
+    letter-spacing: 1px;
+    line-height: 1.85;
+    padding: 3px 12px 0 12px;
+    width: auto;
+    height: 24px;
+}
+
+.section2 h2 {
+    color: #1b2733;
+    font-weight: 800;
+    margin: 0;
+    font-size: 38px;
+    line-height: 1.17;
+    margin-top: 19px;
+    margin-bottom: 30px;
+}
 
 
 
