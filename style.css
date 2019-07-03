@@ -1073,7 +1073,6 @@ footer .top {
 footer .bottom {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
-/*    justify-content: space-around;*/
 }
 
 footer .div1 {
@@ -1158,6 +1157,9 @@ footer .div1 a {
     display: block;
 }
 
+footer .google, footer .apple {
+    max-width: 160px;
+}
 
 
 
