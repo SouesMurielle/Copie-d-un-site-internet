@@ -502,7 +502,6 @@ nav ul li:last-child:hover a {
     background-size: auto;
     display: flex;
     padding: 120px 400px;
-    margin-bottom: 160px;
 }
 
 .section4 .left {
@@ -644,7 +643,8 @@ nav ul li:last-child:hover a {
     padding-right: 165px;
     display: flex;
     justify-content: space-between;
-    margin: -140px 231.5px 100px;
+    margin: 0px 231.5px 00px;
+    margin-bottom: 100px;
 }
 
 .section5 .left,
@@ -685,14 +685,166 @@ nav ul li:last-child:hover a {
     max-width: 100%;
 }
 
-.section5 .partie-img {
-    display: flex;
-    justify-content: center;
+.section5 .left .google, .section5 .left .apple {
+    width: 50px;
+    align-self: center;
 }
 
-.section5 .partie-img:first-child {
-    width: 270px;
+.section5 .partie-img {
+    margin-top: 30px;
+    padding-top: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
+
+.section5 .left img {
+    height: 171px;
+    margin-left: 14px;
+}
+
+.section5 .left .apple {
+    margin-right: 25px;
+}
+
+.section5 .left .google {
+    margin-left: 25px;
+}
+
+.section5 .left .bottom-part {
+    background-image: url(https://cdn2.hubspot.net/hubfs/4364162/web/backgrounds/pattern-small.png);
+}
+
+.section5 .left .partie-img {
+    background-image: linear-gradient(to top,rgba(255,255,255,0),#fff);
+    
+}
+
+.section5 .right .partie-img img {
+    position: relative;
+    height: 180px;
+}
+
+.section5 .right .img1 {
+    left: 67.5%;
+    bottom: 15px;
+    transform: scale(0.9);
+    opacity: .66;
+}
+
+.section5 .right .img3 {
+    right: 67.5%;
+    bottom: 30px;
+    transform: scale(0.8);
+    opacity: 0.33;
+}
+
+.section5 .right .img2 {
+    z-index: 1;
+}
+
+
+
+
+/*    Partie section5    */
+
+.section6 {
+    padding-left: 165px;
+    padding-right: 165px;
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 231.5px 0px;
+}
+
+.section6 .left {
+    margin-bottom: 30px;
+    margin-top: 40px;
+    padding-right: 20px;
+}
+
+.section6 .left h2 {
+    font-weight: 800;
+    margin: 0;
+    color: #1b2733;
+    font-size: 38px;
+    line-height: 1.17;
+}
+
+.section6 .right {
+    display: flex;
+}
+
+.section6 .right .logo {
+    width: 205px;
+    margin-top: -60px;
+}
+
+.section6 .right .droite {
+    display: flex;
+    flex-direction: column;
+    background-color: purple;
+}
+
+.section6 .right .droite img {
+    width: 48px;
+    min-width: 48px;
+    min-height: 48px;
+}
+
+.section6 .right .droite .conseiller {
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.section6 .right .droite .cliente {
+    font-size: 16px;
+    background-color: #2caf90;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.section6 .right .message {
+    display: inline-grid;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.06);
+}
+
+.section6 .right .conseiller {
+    grid-template-columns: auto 1fr;
+}
+
+.section6 .right .cliente {
+    grid-template-columns: 1fr auto;
+}
+
+.section6 .right .conseiller p {
+    margin-left: 11px;
+    background-color: #fff;
+    border-radius: 6px;
+    line-height: 1.6;
+}
+
+.section6 .right .cliente p {
+    border-radius: 6px;
+    color: #fff;
+    
+}
+
+.section6 .right .conseiller img {
+    margin-top: auto;
+    margin-bottom: 15px;
+    margin-right: 
+}
+
+.section6 .right .message {
+    margin-bottom: 24px;
+    padding: 15px 24px;
+}
+
+.section6 .right .message p {
+    margin-top: 0px;
+}
+
 
 
 
