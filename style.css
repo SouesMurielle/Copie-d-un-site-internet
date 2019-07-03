@@ -199,15 +199,28 @@ nav ul li:last-child:hover a {
     display: flex;
     justify-content: space-between;
     margin-top: -140px;
+    
 }
 
-.section2 > div {
+.section2 .left,.section2 .right {
     background-color: #fff;
-    width: 38%;
+    width: 50%;
+    border-radius: 16px;
+}
+
+.section2 .left {
+    margin-right: 13px;
+}
+
+.section2 .right {
+    margin-left: 13px;
+}
+
+.section2 .partie-texte
+{
     padding-left: 60px;
     padding-right: 60px;
     padding-top: 60px;
-    border-radius: 16px;
 }
 
 .section2 p {
@@ -255,6 +268,69 @@ nav ul li:last-child:hover a {
     margin-top: 19px;
     margin-bottom: 30px;
 }
+
+.section2 p:last-of-type {
+    margin-bottom: 45px;
+}
+
+.section2 .background-img:before {
+    background-image: linear-gradient(to left,rgba(255,255,255,0),#fff 75%);
+    left: 0;
+    background-color: green; position: absolute;
+    
+}
+
+.section2 .images-superposees:after {
+    background-image: linear-gradient(to left,rgba(255,255,255,0),#fff 75%);
+    right: 0;
+}
+
+.section2 .images-superposees {
+    display: table;
+    box-sizing: border-box;
+}
+
+.section2 .background-img img {
+/*    box-sizing: content-box;*/
+    width: 100%;
+}
+
+.section2 .background-img .premiere {
+    margin-top: 40px;
+}
+
+
+.section2 .front-img img {
+    width: 130px;
+    height: 80px;
+    position: absolute;
+    margin-top: 69px;
+    margin-left: 205px;
+}
+
+.section2 .gauche {
+    position: absolute;
+    width: 111px;
+    height: 50%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background-image: linear-gradient(to left,rgba(255,255,255,0),#fff 95%);
+}
+
+.section2 .droite {
+    position: absolute;
+    width: 111px;
+    height: 50%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background-image: linear-gradient(to right,rgba(255,255,255,0),#fff 110%);
+    margin-left: 430px;
+}
+
+
+
+
+
 
 
 
