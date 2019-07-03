@@ -204,14 +204,11 @@ nav ul li:last-child:hover a {
 /*    Partie section2    */
 
 .section2 {
-    margin-right: 231.5px;
-    margin-left: 231.5px;
     padding-left: 165px;
     padding-right: 165px;
     display: flex;
     justify-content: space-between;
-    margin-top: -140px;
-    margin-bottom: 100px;
+    margin: -140px 231.5px 100px;
 }
 
 .section2 .left,
@@ -313,7 +310,7 @@ nav ul li:last-child:hover a {
 .section2 .left .gauche {
     position: absolute;
     width: 111px;
-    height: 60%;
+    height: 200px;
     margin-top: 10px;
     margin-bottom: 5px;
     background-image: linear-gradient(to left, rgba(255, 255, 255, 0), #fff 95%);
@@ -322,11 +319,11 @@ nav ul li:last-child:hover a {
 .section2 .left .droite {
     position: absolute;
     width: 111px;
-    height: 60%;
+    height: 200px;
     margin-top: 10px;
     margin-bottom: 5px;
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0), #fff 110%);
-    margin-left: 430px;
+    margin-left: 431px;
 }
 
 .section2 .bottom-part {
@@ -391,10 +388,44 @@ nav ul li:last-child:hover a {
 
 
 
+/*    Partie section3    */
+
+.section3 {
+    position: relative;
+    background-image:url(https://cdn2.hubspot.net/hubfs/4364162/web/backgrounds/pattern-lines.svg);
+    background-color: rgba(26,38,51,0.1);
+    background-position: -3% 0%;
+    background-repeat: repeat;
+    background-size: auto;
+    display: flex;
+    padding: 0px 400px 0;
+    height: 677px;
+}
+
+.section3 .left {
+    display: flex;
+    
+}
+
+.section3 .left .gauche {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.section3 .left .gauche img {
+    width: 255px;
+    height: 80px;
+    margin-bottom: 8px;
+}
 
 
-
-
+.section3 .left .droite img {
+    max-width: 761px;
+    max-height: 721px;
+    margin: -28px -21px -700px -190px;
+/*    transform: scale(1.3);*/
+}
 
 
 
