@@ -5,3 +5,5 @@ Copie du site https://www.lunchr.co/
 
 (En date de Mercredi) Je n'ai pas eu le temps de finir/paufiner le css. Il manque 2 éléments auxquels apporter du style, des retouches à faire, et le menu du haut qui n'apparait pas en scroll. Il n'y a aucune animation de mise en place.
 Je pense continuer d'y travailler Jeudi.
+
+(En date de Mercredi) Finalisation du css de quelques éléments, essais d'utilisation du js sans résultat, d'où l'heure tardive du dernier commit.
